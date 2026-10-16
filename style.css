@@ -1,0 +1,336 @@
+/* ===========================
+   Reset & Body
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #e8e8e8;
+    color: #333;
+}
+
+/* ===========================
+   #main — Vùng chứa toàn bộ
+   =========================== */
+#main {
+    width: 980px;
+    margin: 10px auto;       /* Căn giữa màn hình */
+    background-color: #fff;
+}
+
+/* ===========================
+   #head — Logo & Banner
+   =========================== */
+#head {
+    height: 100px;
+    background-color: #1a6496;
+    border: 1px solid #0d3c5e;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+}
+
+#logo h1 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+#banner p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #cde;
+}
+
+/* ===========================
+   #head-link — Thanh điều hướng
+   =========================== */
+#head-link {
+    background-color: #2980b9;
+    padding: 8px 20px;
+    margin-bottom: 2px;
+    overflow: hidden;       /* clearfix nội bộ */
+}
+
+#head-link a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+#head-link a:hover {
+    background-color: #1a6496;
+}
+
+/* ===========================
+   #left — Cột trái (200px)
+   =========================== */
+#left {
+    width: 200px;
+    min-height: 400px;
+    float: left;
+    background-color: #d6eaf8;
+    border-right: 1px solid #aed6f1;
+    padding: 10px;
+}
+
+#left h3 {
+    background-color: #2980b9;
+    color: white;
+    padding: 6px 10px;
+    margin: -10px -10px 10px -10px;
+    font-size: 13px;
+}
+
+#left ul {
+    list-style: none;
+}
+
+#left ul li {
+    border-bottom: 1px dashed #aed6f1;
+}
+
+#left ul li a {
+    display: block;
+    padding: 7px 5px;
+    color: #1a5276;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background 0.2s;
+}
+
+#left ul li a:hover {
+    background-color: #aed6f1;
+    padding-left: 10px;
+}
+
+/* ===========================
+   #right — Cột phải (200px)
+   =========================== */
+#right {
+    width: 200px;
+    min-height: 400px;
+    float: right;
+    background-color: #d5f5e3;
+    border-left: 1px solid #a9dfbf;
+    padding: 10px;
+}
+
+/* Widget chung trong cột phải */
+.widget {
+    margin-bottom: 15px;
+}
+
+.widget h3 {
+    background-color: #27ae60;
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    margin: -10px -10px 8px -10px;
+}
+
+/* === Lịch === */
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.calendar th,
+.calendar td {
+    text-align: center;
+    padding: 3px 1px;
+    border: 1px solid #a9dfbf;
+}
+
+.calendar thead tr:first-child th {
+    background-color: #a9dfbf;
+    font-size: 11px;
+}
+
+.calendar thead tr:last-child th {
+    background-color: #27ae60;
+    color: white;
+}
+
+.calendar td.today {
+    background-color: #f39c12;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+/* === Biểu đồ === */
+.chart {
+    margin-top: 5px;
+}
+
+.bar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 11px;
+}
+
+.bar-label {
+    width: 30px;
+    font-weight: bold;
+    color: #1e8449;
+    flex-shrink: 0;
+}
+
+.bar {
+    background-color: #27ae60;
+    color: white;
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    text-align: right;
+    transition: width 0.3s;
+}
+
+/* === Bản đồ === */
+.map-placeholder {
+    background-color: #a9dfbf;
+    border: 1px solid #27ae60;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #1e8449;
+    border-radius: 4px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* ===========================
+   #content — Nội dung chính
+   =========================== */
+#content {
+    margin-left: 200px;    /* bằng độ rộng #left */
+    margin-right: 200px;   /* bằng độ rộng #right */
+    min-height: 400px;
+    padding: 10px;
+    background-color: #fdfefe;
+    border-left: 1px solid #d5d8dc;
+    border-right: 1px solid #d5d8dc;
+}
+
+/* Box chung */
+.box {
+    background-color: #eaf4fb;
+    border: 1px solid #aed6f1;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    font-size: 14px;
+    color: #1a5276;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #aed6f1;
+    padding-bottom: 4px;
+}
+
+.box p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+
+/* Photo Slide */
+.slide-container {
+    display: flex;
+    gap: 8px;
+}
+
+.slide-item {
+    flex: 1;
+    background-color: #d6eaf8;
+    border: 1px solid #7fb3d3;
+    padding: 20px 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #1a5276;
+    border-radius: 4px;
+}
+
+/* News Row */
+#news-row {
+    display: flex;
+    gap: 8px;
+}
+
+.news-box {
+    flex: 1;
+    background-color: #fef9e7;
+    border: 1px solid #f9e79f;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.news-box h4 {
+    font-size: 13px;
+    color: #784212;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #f9e79f;
+    padding-bottom: 3px;
+}
+
+.news-box p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* ===========================
+   #footer — Cuối trang
+   Dùng clear: both để luôn
+   nằm dưới hai cột float
+   =========================== */
+#footer {
+    clear: both;
+    background-color: #1a6496;
+    color: #cde;
+    text-align: center;
+    padding: 12px 20px;
+    border-top: 3px solid #0d3c5e;
+}
+
+#footer p {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+#footer-links {
+    margin-top: 5px;
+}
+
+#footer-links a {
+    color: #aed6f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 12px;
+    transition: color 0.2s;
+}
+
+#footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}

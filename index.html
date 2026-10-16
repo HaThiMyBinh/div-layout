@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố Cục Trang Web Với DIV và CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="main">
+
+    <!-- ===== PHẦN ĐẦU TRANG: Logo & Banner ===== -->
+    <div id="head">
+        <div id="logo">
+            <h1>🎓 CodeGym Academy</h1>
+        </div>
+        <div id="banner">
+            <p>Học lập trình — Thay đổi tương lai</p>
+        </div>
+    </div>
+
+    <!-- ===== THANH LIÊN KẾT ĐẦU TRANG ===== -->
+    <div id="head-link">
+        <a href="#">Home</a>
+        <a href="#">Students</a>
+        <a href="#">Course</a>
+        <a href="#">News</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- ===== CỘT TRÁI: Liên kết trái ===== -->
+    <div id="left">
+        <h3>Danh mục</h3>
+        <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Khoá học HTML</a></li>
+            <li><a href="#">Khoá học CSS</a></li>
+            <li><a href="#">Khoá học JavaScript</a></li>
+            <li><a href="#">Khoá học Java</a></li>
+            <li><a href="#">Khoá học Python</a></li>
+            <li><a href="#">Diễn đàn</a></li>
+            <li><a href="#">Hỏi &amp; Đáp</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== PHẦN NỘI DUNG CHÍNH ===== -->
+    <div id="content">
+
+        <!-- Hot News -->
+        <div class="box" id="hot-news">
+            <h3>🔥 Hot News</h3>
+            <p>CodeGym khai giảng khoá học Web Fullstack tháng 11/2026. Đăng ký ngay để nhận ưu đãi học phí sớm!</p>
+            <p>Ra mắt chương trình học bổng dành cho sinh viên xuất sắc năm 2026.</p>
+        </div>
+
+        <!-- Photo Slide -->
+        <div class="box" id="photo-slide">
+            <h3>🖼️ Photo Slide</h3>
+            <div class="slide-container">
+                <div class="slide-item">📸 Ảnh hoạt động 1</div>
+                <div class="slide-item">📸 Ảnh hoạt động 2</div>
+                <div class="slide-item">📸 Ảnh hoạt động 3</div>
+            </div>
+        </div>
+
+        <!-- News columns -->
+        <div id="news-row">
+            <div class="news-box">
+                <h4>📰 News 1</h4>
+                <p>Hội thảo lập trình Web tại Hà Nội thu hút hơn 500 lập trình viên tham dự.</p>
+            </div>
+            <div class="news-box">
+                <h4>📰 News 2</h4>
+                <p>Top 10 framework JavaScript phổ biến nhất năm 2026 mà lập trình viên cần biết.</p>
+            </div>
+            <div class="news-box">
+                <h4>📰 News 3</h4>
+                <p>Xu hướng thiết kế UI/UX 2026: Minimalism và Dark Mode đang dẫn đầu.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===== CỘT PHẢI: Lịch, biểu đồ, bản đồ ===== -->
+    <div id="right">
+
+        <!-- Lịch -->
+        <div class="widget">
+            <h3>📅 Lịch</h3>
+            <table class="calendar">
+                <thead>
+                    <tr><th colspan="7">Tháng 10 / 2026</th></tr>
+                    <tr>
+                        <th>T2</th><th>T3</th><th>T4</th>
+                        <th>T5</th><th>T6</th><th>T7</th><th>CN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+                    <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+                    <tr><td>13</td><td>14</td><td>15</td><td class="today">16</td><td>17</td><td>18</td><td>19</td></tr>
+                    <tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr>
+                    <tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Biểu đồ -->
+        <div class="widget">
+            <h3>📊 Thống kê học viên</h3>
+            <div class="chart">
+                <div class="bar-row">
+                    <span class="bar-label">HTML</span>
+                    <div class="bar" style="width: 85%;">85%</div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">CSS</span>
+                    <div class="bar" style="width: 72%;">72%</div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">JS</span>
+                    <div class="bar" style="width: 60%;">60%</div>
+                </div>
+                <div class="bar-row">
+                    <span class="bar-label">Java</span>
+                    <div class="bar" style="width: 48%;">48%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bản đồ -->
+        <div class="widget">
+            <h3>🗺️ Bản đồ</h3>
+            <div class="map-placeholder">
+                📍 Hà Nội, Việt Nam<br>
+                <small>Số 14 Pháo Đài Láng, Đống Đa</small>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div id="footer">
+        <p>© 2026 CodeGym Academy — All rights reserved.</p>
+        <div id="footer-links">
+            <a href="#">Giới thiệu</a>
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Liên hệ</a>
+        </div>
+    </div>
+
+</div><!-- end #main -->
+
+</body>
+</html>
